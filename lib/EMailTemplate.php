@@ -62,7 +62,7 @@ class EMailTemplate extends ParentTemplate {
 		parent::addBodyText($text, $plainText);
 	}
 
-	public function addFooter($text = '') {
+	public function addFooter(string $text = '', ?string $lang = null) {
 		if ($this->footerAdded) {
 			return;
 		}
